@@ -1,0 +1,11 @@
+<Object_Repository>
+	<PageNode name="HomePage">
+		<Object_Node name="SearchBox" locator_type="Id" locator="navbar-query"></Object_Node>
+		<Object_Node name="SearchBoxButton" locator_type="Id" locator="navbar-submit-button"></Object_Node>
+	</PageNode>
+	<PageNode name="ProductPage">
+		<Object_Node name="SeeFullCastLink" locator_type="Xpath" locator=".//div[@id='titleCast']/div/a"></Object_Node>
+		<Object_Node name="ThanksCrewName" locator_type="Xpath" locator=".//div[@id='fullcredits_content']/table[29]/tbody/tr/td[1]"></Object_Node>
+		<Object_Node name="ThanksCrewRole" locator_type="Xpath" locator=".//div[@id='fullcredits_content']/table[29]/tbody/tr/td[3]"></Object_Node>
+	</PageNode>
+</Object_Repository>
