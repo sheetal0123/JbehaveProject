@@ -21,12 +21,8 @@ public class IMDbSteps {
 
 	@Given("user is on url <url>")
 	public void openHomePage(@Named("url") String url) {
-		 driver = new FirefoxDriver();
-
-//      To Run with Chrome driver
-//		System.setProperty("webdriver.chrome.driver",
-//				"C:\\Users\\sheetalsingh\\Downloads\\chromedriver_win32\\chromedriver.exe");
-//		driver = new ChromeDriver();
+		System.setProperty("webdriver.chrome.driver","src/test/resources/driver/chromedriver.exe");
+		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get(url);
